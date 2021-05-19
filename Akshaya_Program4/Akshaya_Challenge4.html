@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+  <html>
+    <head><title>Program-4</title></head>
+    <body>
+    <script type="text/javascript">
+   var str = prompt("Enter the Input", "");
+   if (!(isNaN(str))) //isNaN means is Not a Number
+    {
+      var num, rev = 0,remainder;
+      num = parseInt(str);
+      while (num != 0)
+      {
+        remainder = num % 10;
+        num = parseInt(num / 10);
+        rev = rev * 10 + remainder;
+      }
+      var a = str * rev;
+      alert("Reverse of " + str + " is " + rev + " and their Product is " + a );
+      }
+
+      else
+
+      {
+        str = str.toUpperCase();
+        function vowelCount(str)
+        {
+          const count = str.match(/[aeiou]/gi).length;
+          return count;
+        }
+        const result = vowelCount(str);
+        alert("The given string '" + str + "' has " + result + " number of vowels ");
+      }
+      </script>
+    </body>
+</html>
