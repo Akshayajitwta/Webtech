@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photo Rating</title>
+  </head>
+  <style media="screen">
+    .img{
+      height : 15px;
+      width : 15px;
+    }
+    #demo1{
+      position: absolute;
+      right: 550px;
+      bottom: 350px;
+    }
+    a{
+      color: blue;
+    }
+  </style>
+  <body>
+
+    <p id="demo1"></p>
+    <script>
+    var var1 = setInterval(inTimer, 500);
+    var fs = 5; //font size
+    var ids = document.getElementById("demo1");
+    function inTimer()
+    {
+    ids.innerHTML = 'Photography!!!!';
+    ids.setAttribute('style', "font-size: " + fs + "px; color: red; text-align: right");
+    fs += 5;
+    if (fs >= 50)
+    {
+    clearInterval(var1); //paused
+    var2 = setInterval(deTimer, 500);
+
+    }
+    }
+    function deTimer() //fs = 50px
+    {
+    fs -= 5;
+    ids.innerHTML = 'Photography!!!!';
+    ids.setAttribute('style', "font-size: " + fs + "px; color: black; text-align: right");
+    if (fs == 5)
+    {
+    clearInterval(var2); //paused
+    var1 = setInterval(inTimer, 500);
+    }
+    }
+    </script>
+
+    <header>
+      <a href="#home">Home</a> ||
+      <a href="#">Places</a> ||
+      <a href="#last">Gallery</a> ||
+      <a href="#">About Us</a> ||
+      <a href="#">Search</a> ||
+      <h2>Radhanagar Beach, Andaman</h2>
+      <figure>
+      <img src="https://cdn.andamanholidays.com/wp-content/uploads/2016/08/Radhanagar-3.jpg" alt="Radhanagar Beach, Andaman"><br>
+      </figure>
+      <article class="demo">
+      <p>by <a href="#">Akshaya Subramanian</a></p>
+      <p>Over the years, this superb slice of paradise- Radhanagar Beach in Andaman has won many accolades.
+       The latest being the Tripadvisor’s Traveller’s Choice in 2016 to be named among the Top 25 beaches in Asia.
+     </p>
+     </article>
+     <section>
+     <p>Year : 2018<br>Date : 4th September</p>
+     </section>
+     <h3>Reviews</h3>
+        <div>
+          <p><strong>Beautiful!!!</strong> <br> Jasmine
+            <img src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/rating-star-icon-11-256.png" class="img">
+            <img src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/rating-star-icon-11-256.png" class="img">
+            <img src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/rating-star-icon-11-256.png" class="img">
+            <img src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/rating-star-icon-11-256.png" class="img">
+            <img src="https://www.kindpng.com/picc/m/11-115035_yellow-and-grey-star-grey-star-rating-png.png" class="img">
+          </p>
+          <p>An Amazing Picture.</p>
+          <hr>
+          <p><strong>Cool :)</strong> <br> Nikil
+            <img src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/rating-star-icon-11-256.png" class="img">
+            <img src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/rating-star-icon-11-256.png" class="img">
+            <img src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/rating-star-icon-11-256.png" class="img">
+            <img src="https://cdn2.iconfinder.com/data/icons/flat-design-basic-set-9/24/star-half-grayed-512.png" class="img">
+            <img src="https://www.kindpng.com/picc/m/11-115035_yellow-and-grey-star-grey-star-rating-png.png" class="img">
+          </p>
+          <p>Wonderful click!!</p>
+          <hr>
+          <p><strong>Good</strong> <br> Riya
+            <img src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/rating-star-icon-11-256.png" class="img">
+            <img src="https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/rating-star-icon-11-256.png" class="img">
+            <img src="https://www.kindpng.com/picc/m/11-115035_yellow-and-grey-star-grey-star-rating-png.png" class="img">
+            <img src="https://www.kindpng.com/picc/m/11-115035_yellow-and-grey-star-grey-star-rating-png.png" class="img">
+            <img src="https://www.kindpng.com/picc/m/11-115035_yellow-and-grey-star-grey-star-rating-png.png" class="img">
+          </p>
+          <p>Nice one.</p>
+          <hr>
+        </div>
+        <a href="#home">Home</a> ||
+        <a href="#">Places</a> ||
+        <a href="#last">Gallery</a> ||
+        <a href="#">About Us</a> ||
+        <a href="#">Search</a> ||
+        <p><i><b>Copyright @ 2020 by Akshaya Subramanian</b></i></p>
+    </header>
+  </body>
+</html>
